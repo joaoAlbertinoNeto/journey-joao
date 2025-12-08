@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+king: Deployment
+metadata:
+  name: my-joao-journey
+  labels:
+    app: my-joao-journey
+spec:
+  replicas : 3 
+  selector:
+    matchLabels:
+      app: my-joao-journey
+  template:
+    metadata:
+      labels:
+        app: my-joao-journey
+
+    spec:
+      containers:
+        - name: my-joao-journey
+          image: joaoAlbertino/my-joao-journey
+          ports:
+            - containerPort: 80

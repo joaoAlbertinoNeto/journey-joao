@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Service
+metadata:
+  name: my-joao-journey
+  labels:
+    app: my-joao-journey
+spec:
+  type: LoadBalancer
+  selector:
+    app: my-joao-journey  
+    ports:
+      - protocol: TCP
+        port: 80
+        targetPort: 80
