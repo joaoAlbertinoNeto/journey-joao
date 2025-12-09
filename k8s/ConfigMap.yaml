@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-joao-journey-config
+data: 
+  APP_PREFIX: "joao/v1"
+  APP_MODE": "development"
+  APP_FEATURE_FLAG: "true"
+  DATABASE_HOST: "db.my-joao-journey.svc.cluster.local"
+  DATABASE_PORT: "5432"
+  LOG_LEVEL: "debug"
