@@ -9,3 +9,5 @@ data:
   DATABASE_HOST: "db.my-joao-journey.svc.cluster.local"
   DATABASE_PORT: "5432"
   LOG_LEVEL: "debug"
+  KAFKA_BROKERS: "kafka1:9092,kafka2:9092"
+  CACHE_ENABLED: "true"
